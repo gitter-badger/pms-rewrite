@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import appState from '../../stores/appState'
 @Component({
   selector: 'app-personal-info',
   templateUrl: './personal-info.component.html',
@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonalInfoComponent implements OnInit {
 
-  constructor() { }
+  appState = appState;
+  constructor() {
+    this.appState.setApplication("personal-infomation");
+  }
 
   ngOnInit() {
   }
