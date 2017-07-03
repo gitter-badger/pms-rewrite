@@ -67,6 +67,10 @@ import { BankInfoComponent } from './component/bank-info/bank-info.component';
         {path: 'application-state',  component:ApplicationStatesComponent},
         {path: 'dependent-info',     component:DependentInfoComponent},
         {path: 'bank-info',          component:BankInfoComponent},
+        {path: 'pending',            component:PendingComponent},
+        {path: 'rejected',           component:RejectedComponent},
+        {path: 'verified',           component:VerifiedComponent},
+        {path: 'received',           component:ReceivedComponent},
 
       ],
       { enableTracing: true }
