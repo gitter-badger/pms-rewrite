@@ -62,6 +62,9 @@ import { BankInfoComponent } from './component/bank-info/bank-info.component';
         {path: 'personalInfo', component:PersonalInfoComponent},
         {path: 'service', component:ServiceInfoComponent},
         {path: 'applicationState', component:ApplicationStatesComponent},
+        {path: 'dependentInfo', component:DependentInfoComponent},
+        {path: 'bankInfo', component:BankInfoComponent},
+        
       ],
       { enableTracing: true }
     )
