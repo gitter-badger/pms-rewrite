@@ -1,5 +1,7 @@
 # PmsRewrite
 
+[![Join the chat at https://gitter.im/pms-rewrite/Lobby](https://badges.gitter.im/pms-rewrite/Lobby.svg)](https://gitter.im/pms-rewrite/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.3.
 
 ## Development server
