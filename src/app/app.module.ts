@@ -55,16 +55,16 @@ import { BankInfoComponent } from './component/bank-info/bank-info.component';
     RouterModule.forRoot(
       [
 
-        {path: '' , component:DashboardComponent},
-        {path: 'dashboard' , component:DashboardComponent},
-        {path: 'payment', component:PaymentInfoComponent},
-        {path: 'pensionable', component:PensionableInfoComponent},
-        {path: 'personalInfo', component:PersonalInfoComponent},
-        {path: 'service', component:ServiceInfoComponent},
-        {path: 'applicationState', component:ApplicationStatesComponent},
-        {path: 'dependentInfo', component:DependentInfoComponent},
-        {path: 'bankInfo', component:BankInfoComponent},
-        
+        {path: '' ,                  component:DashboardComponent},
+        {path: 'dashboard' ,         component:DashboardComponent},
+        {path: 'new-pension' ,       component:NewPensionComponent},
+        {path: 'payment',            component:PaymentInfoComponent},
+        {path: 'pensionable',        component:PensionableInfoComponent},
+        {path: 'personal-info',      component:PersonalInfoComponent},
+        {path: 'service',            component:ServiceInfoComponent},
+        {path: 'application-state',  component:ApplicationStatesComponent},
+        {path: 'dependentInfo',      component:DependentInfoComponent},
+        {path: 'bank-info',          component:BankInfoComponent},
       ],
       { enableTracing: true }
     )
