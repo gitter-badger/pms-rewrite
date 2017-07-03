@@ -4,14 +4,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './component/navigation/navigation.component';
-<<<<<<< HEAD
-=======
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { PendingComponent } from './component/pending/pending.component';
 import { ReceivedComponent } from './component/received/received.component';
 import { RejectedComponent } from './component/rejected/rejected.component';
 import { VerifiedComponent } from './component/verified/verified.component';
->>>>>>> 4dbbb2422335565b8032041c4831daaca7cacb11
 import { ApplicationStatesComponent } from './component/application-states/application-states.component';
 import { NewPensionComponent } from './component/new-pension/new-pension.component';
 import { PersonalInfoComponent } from './component/personal-info/personal-info.component';
