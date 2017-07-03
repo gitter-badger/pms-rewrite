@@ -63,10 +63,17 @@ import { BankInfoComponent } from './component/bank-info/bank-info.component';
         {path: 'payment',            component:PaymentInfoComponent},
         {path: 'pensionable',        component:PensionableInfoComponent},
         {path: 'personal-info',      component:PersonalInfoComponent},
-        {path: 'service',            component:ServiceInfoComponent},
-        {path: 'application-state',  component:ApplicationStatesComponent},
-        {path: 'dependentInfo',      component:DependentInfoComponent},
+        {path: 'service-info',       component:ServiceInfoComponent},
+        {path: 'application-state',  component:ApplicationStatesComponent,
+          children:[
+            {path:"personal-infomation",     component:PersonalInfoComponent},
+            {path:"service-infomation",      component:ServiceInfoComponent},
+            {path:"department-infomation",      component:DependentInfoComponent},
+          ]
+        },
+        {path: 'dependent-info',     component:DependentInfoComponent},
         {path: 'bank-info',          component:BankInfoComponent},
+
       ],
       { enableTracing: true }
     )
