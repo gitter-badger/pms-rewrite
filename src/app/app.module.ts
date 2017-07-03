@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MobxAngularModule } from 'mobx-angular';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './component/navigation/navigation.component';
@@ -52,6 +53,7 @@ import { BankInfoComponent } from './component/bank-info/bank-info.component';
   ],
   imports: [
     BrowserModule,
+    MobxAngularModule,
     RouterModule.forRoot(
       [
 
