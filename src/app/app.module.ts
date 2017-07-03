@@ -10,6 +10,9 @@ import { ApplicationStatesComponent } from './component/application-states/appli
 import { NewPensionComponent } from './component/new-pension/new-pension.component';
 import { PersonalInfoComponent } from './component/personal-info/personal-info.component';
 import { ServiceInfoComponent } from './component/service-info/service-info.component';
+import { HeaderComponent } from './component/header/header.component';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
+
 
 @NgModule({
   declarations: [
@@ -23,6 +26,8 @@ import { ServiceInfoComponent } from './component/service-info/service-info.comp
     NewPensionComponent,
     PersonalInfoComponent,
     ServiceInfoComponent
+    HeaderComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule
