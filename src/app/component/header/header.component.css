@@ -1,7 +1,7 @@
 .header{
   height: 50px;
   background: #0065C9;
-
+  cursor: pointer;
 }
 .title{
   font-size: 22px;

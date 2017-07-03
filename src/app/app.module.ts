@@ -16,6 +16,10 @@ import { ServiceInfoComponent } from './component/service-info/service-info.comp
 import { HeaderComponent } from './component/header/header.component';
 import { PensionableInfoComponent } from './component/pensionable-info/pensionable-info.component';
 import { PaymentInfoComponent } from './component/payment-info/payment-info.component';
+import { MarriedInfoComponent } from './component/married-info/married-info.component';
+import { DependentInfoComponent } from './component/dependent-info/dependent-info.component';
+import { WnopRefundComponent } from './component/wnop-refund/wnop-refund.component';
+import { BankInfoComponent } from './component/bank-info/bank-info.component';
 
 
 
@@ -39,7 +43,11 @@ import { PaymentInfoComponent } from './component/payment-info/payment-info.comp
     HeaderComponent,
     DashboardComponent,
     PensionableInfoComponent,
-    PaymentInfoComponent
+    PaymentInfoComponent,
+    MarriedInfoComponent,
+    DependentInfoComponent,
+    WnopRefundComponent,
+    BankInfoComponent
 
   ],
   imports: [
@@ -47,13 +55,17 @@ import { PaymentInfoComponent } from './component/payment-info/payment-info.comp
     RouterModule.forRoot(
       [
 
-        {path: '' , component:DashboardComponent},
-        {path: 'dashboard' , component:DashboardComponent},
-        {path: 'payment', component:PaymentInfoComponent},
-        {path: 'pensionable', component:PensionableInfoComponent},
-        {path: 'personal', component:PersonalInfoComponent},
-        {path: 'service', component:ServiceInfoComponent},
-        {path: 'applicationState', component:ApplicationStatesComponent},
+        {path: '' ,                  component:DashboardComponent},
+        {path: 'dashboard' ,         component:DashboardComponent},
+        {path: 'new-pension' ,       component:NewPensionComponent},
+        {path: 'payment',            component:PaymentInfoComponent},
+        {path: 'pensionable',        component:PensionableInfoComponent},
+        {path: 'personal-info',      component:PersonalInfoComponent},
+        {path: 'service-info',       component:ServiceInfoComponent},
+        {path: 'application-state',  component:ApplicationStatesComponent},
+        {path: 'dependent-info',     component:DependentInfoComponent},
+        {path: 'bank-info',          component:BankInfoComponent},
+
       ],
       { enableTracing: true }
     )
