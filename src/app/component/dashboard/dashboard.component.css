@@ -7,9 +7,17 @@
   padding: 20px;
 }
 .dashboard-tile{
+  transition: 0.3s;
+  cursor: pointer;
   padding: 10px;
   border: 20px  solid #ecf0f5;
   height: 125px;
+}
+.dashboard-tile:hover{
+  background: #207f79;
+}
+.dashboard{
+  height: calc( 100vh - 50px);
 }
 .hr{
   /*border-bottom: 5px solid #3c8dbd;

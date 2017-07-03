@@ -2,8 +2,11 @@
   padding: 0;
 }
 .main-view{
+  margin-top: 0px;
+  height: auto;
+}
+.main-view-background{
   background: #ecf0f5;
-  height: calc( 100vh - 50px);
   padding: 0;
 }
 

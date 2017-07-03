@@ -47,13 +47,14 @@ import { PaymentInfoComponent } from './component/payment-info/payment-info.comp
     RouterModule.forRoot(
       [
 
-        {path: '' , component:DashboardComponent},
-        {path: 'dashboard' , component:DashboardComponent},
-        {path: 'payment', component:PaymentInfoComponent},
-        {path: 'pensionable', component:PensionableInfoComponent},
-        {path: 'personalInfo', component:PersonalInfoComponent},
-        {path: 'service', component:ServiceInfoComponent},
-        {path: 'applicationState', component:ApplicationStatesComponent},
+        {path: '' ,                  component:DashboardComponent},
+        {path: 'dashboard' ,         component:DashboardComponent},
+        {path: 'new-pension' ,       component:NewPensionComponent},
+        {path: 'payment',            component:PaymentInfoComponent},
+        {path: 'pensionable',        component:PensionableInfoComponent},
+        {path: 'personal-info',      component:PersonalInfoComponent},
+        {path: 'service',            component:ServiceInfoComponent},
+        {path: 'application-state',  component:ApplicationStatesComponent},
       ],
       { enableTracing: true }
     )
