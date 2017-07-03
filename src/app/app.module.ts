@@ -32,8 +32,8 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
     RouterModule.forRoot(
       [
 
-        {path: '' , component:DashboardComponent},
-        {path: 'dashboard' , component:DashboardComponent}
+        {path: '' ,           component:DashboardComponent},
+        {path: 'dashboard' ,  component:DashboardComponent},
       ],
       { enableTracing: true }
     )
