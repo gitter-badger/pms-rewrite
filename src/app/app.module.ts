@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './component/navigation/navigation.component';
@@ -12,6 +13,14 @@ import { PendingComponent } from './pending/pending.component';
 import { ReceivedComponent } from './received/received.component';
 import { RejectedComponent } from './rejected/rejected.component';
 import { VerifiedComponent } from './verified/verified.component';
+import { ApplicationStatesComponent } from './component/application-states/application-states.component';
+import { NewPensionComponent } from './component/new-pension/new-pension.component';
+import { PersonalInfoComponent } from './component/personal-info/personal-info.component';
+import { ServiceInfoComponent } from './component/service-info/service-info.component';
+import { HeaderComponent } from './component/header/header.component';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
+
+
 
 @NgModule({
   declarations: [
@@ -26,11 +35,33 @@ import { VerifiedComponent } from './verified/verified.component';
     ReceivedComponent,
     RejectedComponent,
     VerifiedComponent
+    NewPensionComponent,
+    PersonalInfoComponent,
+    ServiceInfoComponent,
+    //StepsComponent,
+    ApplicationStatesComponent,
+    NewPensionComponent,
+    PersonalInfoComponent,
+    ServiceInfoComponent,
+    HeaderComponent,
+    DashboardComponent
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(
+      [
+
+        {path: '' , component:DashboardComponent},
+        {path: 'dashboard' , component:DashboardComponent}
+      ],
+      { enableTracing: true }
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
+
+
 export class AppModule { }
