@@ -54,7 +54,6 @@ import { PaymentInfoComponent } from './component/payment-info/payment-info.comp
         {path: 'personalInfo', component:PersonalInfoComponent},
         {path: 'service', component:ServiceInfoComponent},
         {path: 'applicationState', component:ApplicationStatesComponent},
-        
       ],
       { enableTracing: true }
     )
