@@ -1,14 +1,14 @@
 <div class="header">
   <div class="col-lg-2">
-    <div routerLink="/dashboard" class="title">
+    <div (click)="btnClick()" routerLink="/dashboard" class="title">
       <strong>PMS </strong>2.0
     </div>
   </div>
   <div class="col-lg-10">
 
-    <div class="username">
+    <div class="username" *mobxAutorun>
       <i class="fa fa-user-circle" aria-hidden="true"></i>
-      username
+      {{store.title}}
     </div>
   </div>
 </div>
