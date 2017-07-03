@@ -1,7 +1,25 @@
 .dashboard-title{
   color: #3c8dbd;
   font-size: 27px;
-  margin-left: 19px;
-  padding-top: 20px;
-  border-bottom: 5px solid #3c8dbd;
+  padding: 20px;
+}
+.dashboard-tiles{
+  padding: 20px;
+}
+.dashboard-tile{
+  padding: 10px;
+  border: 20px  solid #ecf0f5;
+  height: 125px;
+}
+.hr{
+  /*border-bottom: 5px solid #3c8dbd;
+  border-radius: 2%;*/
+  background-color: #3c8dbd;
+  border: 0px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.col-lg-3{
+  background: lightseagreen;
 }
