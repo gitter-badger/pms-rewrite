@@ -64,7 +64,13 @@ import { BankInfoComponent } from './component/bank-info/bank-info.component';
         {path: 'pensionable',        component:PensionableInfoComponent},
         {path: 'personal-info',      component:PersonalInfoComponent},
         {path: 'service-info',       component:ServiceInfoComponent},
-        {path: 'application-state',  component:ApplicationStatesComponent},
+        {path: 'application-state',  component:ApplicationStatesComponent,
+          children:[
+            {path:"personal-infomation",     component:PersonalInfoComponent},
+            {path:"service-infomation",      component:ServiceInfoComponent},
+            {path:"department-infomation",      component:DependentInfoComponent},
+          ]
+        },
         {path: 'dependent-info',     component:DependentInfoComponent},
         {path: 'bank-info',          component:BankInfoComponent},
 
