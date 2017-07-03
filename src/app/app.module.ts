@@ -57,8 +57,8 @@ import { PaymentInfoComponent } from './component/payment-info/payment-info.comp
     RouterModule.forRoot(
       [
 
-        {path: '' , component:DashboardComponent},
-        {path: 'dashboard' , component:DashboardComponent}
+        {path: '' ,           component:DashboardComponent},
+        {path: 'dashboard' ,  component:DashboardComponent},
       ],
       { enableTracing: true }
     )
