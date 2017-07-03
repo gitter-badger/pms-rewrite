@@ -1,35 +1,70 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './component/navigation/navigation.component';
+<<<<<<< HEAD
+=======
+import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { PendingComponent } from './component/pending/pending.component';
+import { ReceivedComponent } from './component/received/received.component';
+import { RejectedComponent } from './component/rejected/rejected.component';
+import { VerifiedComponent } from './component/verified/verified.component';
+>>>>>>> 4dbbb2422335565b8032041c4831daaca7cacb11
 import { ApplicationStatesComponent } from './component/application-states/application-states.component';
 import { NewPensionComponent } from './component/new-pension/new-pension.component';
 import { PersonalInfoComponent } from './component/personal-info/personal-info.component';
 import { ServiceInfoComponent } from './component/service-info/service-info.component';
 import { HeaderComponent } from './component/header/header.component';
-import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { PensionableInfoComponent } from './component/pensionable-info/pensionable-info.component';
+import { PaymentInfoComponent } from './component/payment-info/payment-info.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    NewpensionComponent,
-    PersonalinfoComponent,
-    ServiceinfoComponent,
-    StepsComponent,
+    DashboardComponent,
+    PendingComponent,
+    ReceivedComponent,
+    RejectedComponent,
+    VerifiedComponent,
+    NewPensionComponent,
+    PersonalInfoComponent,
+    ServiceInfoComponent,
+    //StepsComponent,
     ApplicationStatesComponent,
     NewPensionComponent,
     PersonalInfoComponent,
-    ServiceInfoComponent
+    ServiceInfoComponent,
     HeaderComponent,
-    DashboardComponent
+    DashboardComponent,
+    PensionableInfoComponent,
+    PaymentInfoComponent
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(
+      [
+
+        {path: '' , component:DashboardComponent},
+        {path: 'dashboard' , component:DashboardComponent},
+        {path: 'payment', component:PaymentInfoComponent},
+        {path: 'pensionable', component:PensionableInfoComponent},
+        {path: 'personalInfo', component:PersonalInfoComponent},
+        {path: 'service', component:ServiceInfoComponent},
+        {path: 'applicationState', component:ApplicationStatesComponent},
+      ],
+      { enableTracing: true }
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
+
+
 export class AppModule { }

@@ -1,0 +1,201 @@
+<div>
+  <h3>Pensionable Information</h3>
+
+  <div class="form-group">
+    <label class="control-label col-sm-4" for="salScale">Salary Code</label>
+    <div class="col-sm-2">
+      <input type="text" class="form-control" name="salScale" id="salScale" placeholder="Salary Code">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="doi" class="control-label col-sm-4">Last Date of Increment</label>
+    <div class=" col-sm-2">
+      <input type="text" class="form-control" name="doi" id="doi" placeholder="YYYY-MM-DD"/>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-4" for="txtMonthlySalary">Monthly Salary</label>
+    <div class="col-sm-2">
+      <input type="text" class="form-control" name="txtMonthlySalary" id="txtMonthlySalary" style="text-align: right" value="0">
+    </div>
+  </div>
+  <br/>
+
+
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 ">
+      <table id="tblService" class="table table-striped">
+        <tr class="info">
+          <td><label>Details of the Period of Service</label></td>
+          <td class="col-sm-1">Years</td>
+          <td class="col-sm-1">Months</td>
+          <td class="col-sm-1">Days</td>
+        </tr>
+        <tr>
+          <td>Period of trained service relevant to the calculation of pension</td>
+          <td>
+            <input type="text" class="form-control" name="tblServiceYearR1" id="tblServiceYearR1" value="0">
+          </td>
+          <td>
+            <input type="text" class="form-control" name="tblServiceMonthR1" id="tblServiceMonthR1" value="0">
+          </td>
+          <td>
+            <input type="text" class="form-control" name="tblServiceDayR1" id="tblServiceDayR1" value="0">
+          </td>
+        </tr>
+        <tr>
+          <td>Casual/Daily wages from which W&OP contributions were deducted</td>
+          <td>
+            <input type="text" class="form-control" name="tblServiceYearR2" id="tblServiceYearR2" value="0">
+          </td>
+          <td>
+            <input type="text" class="form-control" name="tblServiceMonthR2" id="tblServiceMonthR2" value="0">
+          </td>
+          <td>
+            <input type="text" class="form-control" name="tblServiceDayR2" id="tblServiceDayR2" value="0">
+          </td>
+        </tr>
+        <tr>
+          <td>Permanent and Pensionable</td>
+          <td>
+            <input type="text" class="form-control" name="tblServiceYearR3" id="tblServiceYearR3" value="0">
+          </td>
+          <td>
+            <input type="text" class="form-control" name="tblServiceMonthR3" id="tblServiceMonthR3" value="0">
+          </td>
+          <td>
+            <input type="text" class="form-control" name="tblServiceDayR3" id="tblServiceDayR3" value="0">
+          </td>
+        </tr>
+        <tr>
+          <td>Period of service relevant to the calculation of pension</td>
+          <td>
+            <input type="text" class="form-control" name="tblServiceYearR4" id="tblServiceYearR4" value="0">
+          </td>
+          <td>
+            <input type="text" class="form-control" name="tblServiceMonthR4" id="tblServiceMonthR4" value="0">
+          </td>
+          <td>
+            <input type="text" class="form-control" name="tblServiceDayR4" id="tblServiceDayR4" value="0">
+          </td>
+
+        </tr>
+
+      </table>
+
+    </div>
+
+  </div>
+
+
+  <br/>
+
+
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 ">
+      <table id="tblNopay" class="table table-striped">
+        <tr class="info">
+          <td><label>No-pay leave details</label></td>
+          <td class="col-sm-1">Years</td>
+          <td class="col-sm-1">Months</td>
+          <td class="col-sm-1">Days</td>
+        </tr>
+        <tr>
+          <td>Total No-pay leave period</td>
+          <td>
+            <input type="text" class="form-control" name="tblNopayYearR1" id="tblNopayYearR1" value="0">
+          </td>
+          <td>
+            <input type="text" class="form-control" name="tblNopayMonthR1" id="tblNopayMonthR1" value="0">
+          </td>
+          <td>
+            <input type="text" class="form-control" name="tblNopayDayR1" id="tblNopayDayR1" value="0">
+          </td>
+        </tr>
+        <tr>
+          <td>No-pay leave set off</td>
+          <td>
+            <input type="text" class="form-control" name="tblNopayYearR2" id="tblNopayYearR2" value="0">
+          </td>
+          <td>
+            <input type="text" class="form-control" name="tblNopayMonthR2" id="tblNopayMonthR2" value="0" onkeyup="setNetNopay();">
+          </td>
+          <td>
+            <input type="text" class="form-control" name="tblNopayDayR2" id="tblNopayDayR2" value="0">
+          </td>
+        </tr>
+        <tr>
+          <td>Net No-pay Leaves after setting off</td>
+          <td>
+            <input type="text" class="form-control" name="tblNopayYearR3" id="tblNopayYearR3" value="0" readonly>
+          </td>
+          <td>
+            <input type="text" class="form-control" name="tblNopayMonthR3" id="tblNopayMonthR3" value="0" readonly>
+          </td>
+          <td>
+            <input type="text" class="form-control" name="tblNopayDayR3" id="tblNopayDayR3" value="0" readonly>
+          </td>
+        </tr>
+
+
+      </table>
+
+    </div>
+
+  </div>
+
+  <br/>
+
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 ">
+      <table id="tblSal" class="table table-striped">
+        <tr class="info">
+          <td><label>Salary Particulars</label></td>
+          <td>As At the Date of Retirement</td>
+          <td>As at 01/01/2020</td>
+        </tr>
+        <tr class="">
+          <td><label>Annual consolidated salary </label></td>
+          <td class="col-sm-2" align="right"><input type="text" class="form-control col-sm-1 money" style="text-align: right" name="tblSalInfo" id="tblSalInfo" value="0" readonly></td>
+          <td class="col-sm-2" align="right"><input type="text" class="form-control col-sm-1 money" style="text-align: right" name="tblSalInfo2020" id="tblSalInfo2020" value="0" readonly></td>
+        </tr>
+        <tr class="">
+          <td><label>Earned Increment</label><span class="col-sm-5"> Eligible for Earned Increment</span> <input type="checkbox"
+              class="" style="height: 20px;width: 20px;" name="incrementState" id="incrementState"></td>
+          <td class="col-sm-2" align="right"><input type="text" class="form-control col-sm-1 money" style="text-align: right" name="tblSalInfoInc" id="tblSalInfoInc"
+              value="0" readonly></td>
+          <td class="col-sm-2" align="right"><input type="text" class="form-control col-sm-1 money" style="text-align: right" name="tblSalInfo2020Inc" id="tblSalInfo2020Inc"
+              value="0"  readonly></td>
+        </tr>
+        <tr>
+          <td>Pension Allowances (Annually)</td>
+        </tr>
+
+      </table>
+      <input type="hidden" id="hIsSalFound" name="hIsSalFound" value="no" />
+
+      <a href="javascript:void(0);" class="btn-info btn-sm" id='anc_addSal'>Add Allowance</a>
+      <a href="javascript:void(0);" class="btn-info btn-sm" id='anc_remSal'>Remove Allowance</a>
+      <div class="row">
+        <div class="col-sm-10">
+          <label class="">Gross annual salary applicable to the calculation of pension</label>
+        </div>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" name="tblSalTotal" id="tblSalTotal" value="0" readonly>
+
+          <label class="col-sm-1"></label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ul class="list-inline  col-sm-offset-6">
+    <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+    <li><button type="button" class="btn btn-primary" id="btnPension">Continue</button></li>
+  </ul>
+</div>
