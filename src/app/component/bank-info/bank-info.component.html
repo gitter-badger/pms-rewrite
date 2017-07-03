@@ -1,3 +1,91 @@
-<p>
-  bank-info works!
-</p>
+<div class="tab-pane" role="tabpanel" id="step4">
+  <h3>Bank Information</h3>
+  <h4 class="col-sm-offset-1">For Pension</h4>
+
+  <div class="form-group">
+    <label class="control-label col-sm-4" for="bank">Bank Name/ බැංකුව / வங்கி</label>
+    <div class="col-sm-2">
+      <select class="form-control" name="bank" id="bank" onblur="" onchange="">
+            <option value="0" disabled selected>Select Bank</option>
+            <option value=""></option>                                            
+          </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-4" for="branch">Branch / ශාඛාව / கிளை</label>
+    <div class="col-sm-2">
+      <select class="form-control" name="branch" id="branch" onblur="" onchange="">
+          <option value="0" disabled selected>Select Branch</option>
+        </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="bAccNo" class="control-label col-sm-4">Bank Account no / බැංකු ගිණුම් අංකය</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" name="bAccNo" id="bAccNo" placeholder="Bank Account no" onkeypress=""
+        onblur="" value="">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="bAccNoConf" class="control-label col-sm-4">Confirm Bank Account no / බැංකු ගිණුම් අංකය</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" name="bAccNoConf" id="bAccNoConf" placeholder="Confirm Bank Account no" onkeypress=""
+        onblur="" value="">
+    </div>
+  </div>
+
+  <h4 class="col-sm-offset-1">For Gratuity</h4>
+
+  <div class="form-group">
+    <label class="control-label col-sm-4" for="bankGrat">Bank Name/ බැංකුව / வங்கி</label>
+    <div class="col-sm-2">
+      <select class="form-control" name="bankGrat" id="bankGrat" onblur="" onchange="">
+                <option value="0" disabled selected>Select Bank</option>
+                <option value="7010">Bank of Ceylon</option>
+                <option value="7719">National Savings Bank</option>
+                <option value="7135">Peoples Bank</option>
+
+            </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-4" for="branchGrat">Branch / ශාඛාව / கிளை</label>
+    <div class="col-sm-2">
+      <select class="form-control" name="branchGrat" id="branchGrat" onblur="" onchange="">
+        <option value="0" disabled selected>Select Branch</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="bAccNoGrat" class="control-label col-sm-4">Bank Account no / බැංකු ගිණුම් අංකය</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" name="bAccNoGrat" id="bAccNoGrat" placeholder="Bank Account no" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+        onblur="" value="">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="bAccNoGratConf" class="control-label col-sm-4">Confirm Bank Account no / බැංකු ගිණුම් අංකය</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" name="bAccNoGratConf" id="bAccNoGratConf" placeholder="Confirm Bank Account no" onkeypress=""
+        onblur="" value="">
+    </div>
+  </div>
+
+  <ul class="list-inline col-sm-offset-6">
+    <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+
+    <li><button type="button" class="btn btn-primary" id="btnBank">Continue</button></li>
+
+    <li><button type="button" class="btn btn-primary" id="btnBank">Continue</button></li>
+
+    <li><button type="submit" class="btn btn-primary" id="btnMilSubmit" onclick="">Submit Primary Application</button></li>
+
+  </ul>
+
+</div>
