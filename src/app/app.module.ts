@@ -3,9 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './component/navigation/navigation.component';
-import { NewpensionComponent } from './component/newpension/newpension.component';
-import { PersonalinfoComponent } from './component/personalinfo/personalinfo.component';
-import { ServiceinfoComponent } from './component/serviceinfo/serviceinfo.component';
 import { ApplicationStatesComponent } from './component/application-states/application-states.component';
 import { NewPensionComponent } from './component/new-pension/new-pension.component';
 import { PersonalInfoComponent } from './component/personal-info/personal-info.component';
