@@ -1,3 +1,96 @@
-<p>
-  dependent-info works!
-</p>
+<div class="tab-pane" role="tabpanel" id="step3">
+    <h3>Dependant Information</h3>
+
+    <div class="form-group">
+        <label class="control-label col-sm-4" for="maritalStatus">Marital Status</label>
+        <div class="col-sm-2">
+            <select class="form-control" name="maritalStatus" id="maritalStatus" onblur="changeMaritalStatus(name);" onchange="changeMaritalStatus(name);">
+                <option value="0" disabled selected>Select Status</option>
+                <option value="single">Single / Widowed / Divorced</option>
+                <option value="married">Married</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="spouseDiv">
+        <!--Dependent Info -->
+
+    </div>
+    <br/>
+    <div class="row">
+        <label class="control-label col-sm-4 ">Children Information</label>
+    </div>
+    <br/>
+
+    <div class="row" id="children">
+
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+    <table id="tbl1" class="table table-striped">
+        <tr class="info">
+            <td>Name</td>
+            <td>Gender</td>
+            <td>Date of Birth</td>
+            <td>NIC No</td>
+            <td>Is Differently Abled</td>
+        </tr>
+
+        <tr>
+            <td>
+                <select class="form-control" name="childGender" id="childGender" onblur="validateDropdown(name);" onchange="validateDropdown(name);">
+                            <option value="0" disabled>Select</option>
+                            <option value="son" >Male</option>
+                            <option value="daughter" >Female</option>
+                        </select>
+            </td>
+            <td>
+                <input type="text" class="form-control" id="dobChild" name="dobChild" placeholder="date of birth here" onchange="validateDate(name);"
+                    onblur="validateDate(name);" value="">
+            </td>
+            <td>
+                <input type="text" class="form-control" name="childNic" id="childNic" onblur="validateNIC(name);" value="">
+            </td>
+            <td>
+                <label class="btn btn-default">
+                            <input type="checkbox" autocomplete="off" name="isDisabled">
+                            <span class="glyphicon glyphicon-ok"></span>
+                        </label>
+            </td>
+        </tr>
+
+
+
+    </table>
+            <a href="javascript:void(0);" id='anc_add' class="btn-sm btn-info">Add Child</a>
+            <a href="javascript:void(0);" id='anc_rem' class="btn-sm btn-info">Remove Child</a>
+        </div>
+
+    </div>
+
+
+    <br/>
+
+    <div class="form-group">
+        <label class="control-label col-sm-4" for="wopRefundStatus">W&OP Refund Status</label>
+        <div class="col-sm-2">
+            <select class="form-control" name="wopRefundStatus" id="wopRefundStatus" onblur="changeWopRefundStatus(name);" onchange="changeWopRefundStatus(name);">
+                <option value="0" disabled >Select Status</option>
+                <option value="no" selected>no</option>
+                <option value="yes">yes</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row" id="wopRefundDiv">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <!--Tablle-->
+        </div>
+
+    </div>
+    <br/>
+    <ul class="list-inline col-sm-offset-6">
+        <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+        <li><button type="button" class="btn btn-primary" id="btnWop">Continue</button></li>
+    </ul>
+</div>
