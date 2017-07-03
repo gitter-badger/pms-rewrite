@@ -1,28 +1,33 @@
 <div>
   <h3>Pensionable Information</h3>
 
+  <br/>
   <div class="form-group">
-    <label class="control-label col-sm-4" for="salScale">Salary Code</label>
+    <div class="col-sm-1"></div>
+    <label class="control-label col-sm-2" for="salScale">Salary Code</label>
     <div class="col-sm-2">
-      <input type="text" class="form-control" name="salScale" id="salScale" placeholder="Salary Code">
+      <input type="text" class="form-control" name="salScale" id="salScale" placeholder="Salary Code"/>
     </div>
   </div>
+  <br/><br/>
 
   <div class="form-group">
-    <label for="doi" class="control-label col-sm-4">Last Date of Increment</label>
+    <div class="col-sm-1"></div>
+    <label for="doi" class="control-label col-sm-2">Last Date of Increment</label>
     <div class=" col-sm-2">
       <input type="text" class="form-control" name="doi" id="doi" placeholder="YYYY-MM-DD"/>
     </div>
   </div>
+  <br/><br/>
 
   <div class="form-group">
-    <label class="control-label col-sm-4" for="txtMonthlySalary">Monthly Salary</label>
+    <div class="col-sm-1"></div>
+    <label class="control-label col-sm-2" for="txtMonthlySalary">Monthly Salary</label>
     <div class="col-sm-2">
-      <input type="text" class="form-control" name="txtMonthlySalary" id="txtMonthlySalary" style="text-align: right" value="0">
+      <input type="text" class="form-control" name="txtMonthlySalary" id="txtMonthlySalary" style="text-align: right" value="0"/>
     </div>
   </div>
-  <br/>
-
+  <br/><br/><br/><br/><br/>
 
   <div class="row">
     <div class="col-sm-1"></div>
@@ -81,18 +86,12 @@
           <td>
             <input type="text" class="form-control" name="tblServiceDayR4" id="tblServiceDayR4" value="0">
           </td>
-
         </tr>
-
       </table>
-
     </div>
-
   </div>
 
-
   <br/>
-
 
   <div class="row">
     <div class="col-sm-1"></div>
@@ -140,12 +139,8 @@
             <input type="text" class="form-control" name="tblNopayDayR3" id="tblNopayDayR3" value="0" readonly>
           </td>
         </tr>
-
-
       </table>
-
     </div>
-
   </div>
 
   <br/>
@@ -153,6 +148,7 @@
   <div class="row">
     <div class="col-sm-1"></div>
     <div class="col-sm-10 ">
+
       <table id="tblSal" class="table table-striped">
         <tr class="info">
           <td><label>Salary Particulars</label></td>
@@ -175,25 +171,28 @@
         <tr>
           <td>Pension Allowances (Annually)</td>
         </tr>
-
       </table>
-      <input type="hidden" id="hIsSalFound" name="hIsSalFound" value="no" />
 
+      <input type="hidden" id="hIsSalFound" name="hIsSalFound" value="no" />
+      <br/>
       <a href="javascript:void(0);" class="btn-info btn-sm" id='anc_addSal'>Add Allowance</a>
       <a href="javascript:void(0);" class="btn-info btn-sm" id='anc_remSal'>Remove Allowance</a>
+      <br/><br/>
+
       <div class="row">
         <div class="col-sm-10">
           <label class="">Gross annual salary applicable to the calculation of pension</label>
         </div>
         <div class="col-sm-2">
           <input type="text" class="form-control" name="tblSalTotal" id="tblSalTotal" value="0" readonly>
-
           <label class="col-sm-1"></label>
         </div>
       </div>
+
     </div>
   </div>
-
+  
+  <br/>
   <ul class="list-inline  col-sm-offset-6">
     <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
     <li><button type="button" class="btn btn-primary" id="btnPension">Continue</button></li>
