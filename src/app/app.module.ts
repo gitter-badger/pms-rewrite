@@ -51,7 +51,7 @@ import { PaymentInfoComponent } from './component/payment-info/payment-info.comp
         {path: 'dashboard' , component:DashboardComponent},
         {path: 'payment', component:PaymentInfoComponent},
         {path: 'pensionable', component:PensionableInfoComponent},
-        {path: 'personalInfo', component:PersonalInfoComponent},
+        {path: 'personal', component:PersonalInfoComponent},
         {path: 'service', component:ServiceInfoComponent},
         {path: 'applicationState', component:ApplicationStatesComponent},
       ],
