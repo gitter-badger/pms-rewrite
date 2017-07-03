@@ -19,6 +19,8 @@ import { PersonalInfoComponent } from './component/personal-info/personal-info.c
 import { ServiceInfoComponent } from './component/service-info/service-info.component';
 import { HeaderComponent } from './component/header/header.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { PensionableInfoComponent } from './component/pensionable-info/pensionable-info.component';
+import { PaymentInfoComponent } from './component/payment-info/payment-info.component';
 
 
 
@@ -45,7 +47,10 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
     ServiceInfoComponent,
     HeaderComponent,
     DashboardComponent
-    
+    DashboardComponent,
+    PensionableInfoComponent,
+    PaymentInfoComponent
+
   ],
   imports: [
     BrowserModule,
