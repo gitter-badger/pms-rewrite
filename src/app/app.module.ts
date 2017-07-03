@@ -4,18 +4,30 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './component/navigation/navigation.component';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { PendingComponent } from './component/pending/pending.component';
+import { ReceivedComponent } from './component/received/received.component';
+import { RejectedComponent } from './component/rejected/rejected.component';
+import { VerifiedComponent } from './component/verified/verified.component';
 import { ApplicationStatesComponent } from './component/application-states/application-states.component';
 import { NewPensionComponent } from './component/new-pension/new-pension.component';
 import { PersonalInfoComponent } from './component/personal-info/personal-info.component';
 import { ServiceInfoComponent } from './component/service-info/service-info.component';
 import { HeaderComponent } from './component/header/header.component';
-import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { PensionableInfoComponent } from './component/pensionable-info/pensionable-info.component';
+import { PaymentInfoComponent } from './component/payment-info/payment-info.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
+    DashboardComponent,
+    PendingComponent,
+    ReceivedComponent,
+    RejectedComponent,
+    VerifiedComponent,
     NewPensionComponent,
     PersonalInfoComponent,
     ServiceInfoComponent,
@@ -25,15 +37,23 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
     PersonalInfoComponent,
     ServiceInfoComponent,
     HeaderComponent,
-    DashboardComponent
+    DashboardComponent,
+    PensionableInfoComponent,
+    PaymentInfoComponent
+
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(
       [
 
-        {path: '' ,           component:DashboardComponent},
-        {path: 'dashboard' ,  component:DashboardComponent},
+        {path: '' , component:DashboardComponent},
+        {path: 'dashboard' , component:DashboardComponent},
+        {path: 'payment', component:PaymentInfoComponent},
+        {path: 'pensionable', component:PensionableInfoComponent},
+        {path: 'personalInfo', component:PersonalInfoComponent},
+        {path: 'service', component:ServiceInfoComponent},
+        {path: 'applicationState', component:ApplicationStatesComponent},
       ],
       { enableTracing: true }
     )
