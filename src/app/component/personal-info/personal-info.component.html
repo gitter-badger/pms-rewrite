@@ -1,63 +1,48 @@
-<div class="tab-pane active" role="tabpanel" id="step1">
-
+<div>
   <h3>Personal Information</h3>
-  <br/>
-
-  <input type="hidden" id="wopNo" name="wopNo" value="" />
-  <input type="hidden" id="type1" name="type1" value="" />
-  <input type="hidden" id="status" name="status" value="" />
-  <input type="hidden" id="refNo" name="refNo" value="" />
-  <input type="hidden" id="baseurl" name="baseurl" value="">
 
   <div class="form-group">
     <label class="control-label col-sm-4" for="salutation">Name in Full/සම්පුර්ණ නම /முழு பெயர்</label>
     <div class="col-sm-8">
       <div class="col-sm-2">
         <select class="form-control" name="salutation" id="salutation">
-                                                <option value="0" disabled selected>Title</option>
-                                                <option value="Ven">Ven</option>
-                                                <option value="Mr">Mr</option>
-                                                <option value="Mrs">Mrs</option>
-                                                <option value="Miss">Miss</option>
-                                            </select>
+          <option value="0" disabled selected>Title</option>
+          <option value="Ven">Ven</option>
+          <option value="Mr">Mr</option>
+          <option value="Mrs">Mrs</option>
+          <option value="Miss">Miss</option>
+        </select>
       </div>
-      <!-- /btn-group -->
+
       <div class="col-sm-7">
         <input type="text" id="fullname" name="fullname" class="form-control " maxlength="200" placeholder="Name" value="">
         <span id="fullnameInfo" style="color: blue; display: none;">Enter name as in your NIC (Ex:- Tharika Ovini Disansa Dissanayaka)</span>
       </div>
     </div>
-    <!-- /input-group -->
   </div>
-
-
 
   <div class="form-group">
     <label for="dob" class="control-label col-sm-4">Date of Birth/උපන් දිනය/நியமனம</label>
     <div class="col-sm-2">
-      <input type="text" class="form-control" name="dob" id="dob" placeholder="YYYY-MM-DD"/>
+      <input type="text" class="form-control" name="dob" id="dob" placeholder="YYYY-MM-DD" />
     </div>
   </div>
-
-
 
   <div class="form-group">
     <label for="nicNo" class="control-label col-sm-4">NIC No/ජාතික හැදුනුම්පත් අංකය/தேசிய அடையாள அட்டை</label>
     <div class=" col-sm-3">
-      <input type="text" class="form-control" name="nicNo" id="nicNo" placeholder="XXXXXXXXXV"/>
+      <input type="text" class="form-control" name="nicNo" id="nicNo" placeholder="XXXXXXXXXV" />
       <span id="nicNoErr" style="color: red; display: none;">NIC number is already exists in the system  </span>
-
     </div>
   </div>
-
 
   <div class="form-group">
     <label class="col-xs-4 control-label">Gender/ස්ත්‍රී පුරුෂ භාවය /பாலினம்</label>
     <div class="col-xs-8">
       <div class="btn-group" data-toggle="buttons">
-        <label name="lblgenderm" id="lblgenderm" class="btn btn-default"  >
+        <label name="lblgenderm" id="lblgenderm" class="btn btn-default">
         <input type="radio" id="genderm" name="gender" value="male" /> Male</label>
-        <label name="lblgenderf" id="lblgenderf" class="btn btn-default" >
+        <label name="lblgenderf" id="lblgenderf" class="btn btn-default">
         <input type="radio" id="genderf" name="gender" value="female" /> Female</label>
       </div>
     </div>
@@ -66,7 +51,7 @@
   <div class="form-group">
     <label for="photo" class="control-label col-sm-4">Photo</label>
     <div class=" col-sm-3 col-md-2 col-lg-2">
-      <input type="file" class="upload" name="userfile" id="userfile" style="display: none;"/>
+      <input type="file" class="upload" name="userfile" id="userfile" style="display: none;" />
       <div class="thumbnail fill" style="width: 128px; height: 166px;">
         <label for="userfile">
             <img class="imgup img-responsive" style="max-height: 100%; max-width: 100%;" name="gal" id="gal" src="" alt="your image"/>
@@ -79,39 +64,38 @@
       <span id="userfileInfo" style="color: blue;">Passport size (128 x 166)</span>
       <span id="userfileErr" style="color: red; display: none;">Please select a valid image file</span>
     </div>
-
   </div>
 
   <div class="form-group">
     <label for="district" class="control-label col-sm-4">District / දිස්ත්‍රික්කය</label>
     <div class="col-sm-3" style="margin-bottom: 5px">
-		<select class="form-control" name="district" id="district">
-                                            <option value="" disabled selected>Select District</option>
-                                            <option value="2">Ampara</option>
-                                            <option value="3">Anuradhapura</option>
-                                            <option value="4">Badulla</option>
-                                            <option value="5">Batticaloa</option>
-                                            <option value="1">Colombo</option>
-                                            <option value="6">Galle</option>
-                                            <option value="7">Gampaha</option>
-                                            <option value="8">Hambantota</option>
-                                            <option value="25">Jaffna</option>
-                                            <option value="10">Kaluthara</option>
-                                            <option value="11">Kandy</option>
-                                            <option value="12">Kegalle</option>
-                                            <option value="13">Kilinochchi</option>
-                                            <option value="14">Kurunagala</option>
-                                            <option value="15">Mannar</option>
-                                            <option value="16">Mathale</option>
-                                            <option value="17">Mathara</option>
-                                            <option value="18">Monaragala</option>
-                                            <option value="19">Mullaitivu</option>
-                                            <option value="20">Nuwara Eliya</option>
-                                            <option value="21">Polonnaruwa</option>
-                                            <option value="22">Puttalam</option>
-                                            <option value="23">Ratnapura</option>
-                                            <option value="24">Trincomalee</option>
-                                            <option value="9">Vavuniya</option>
+      <select class="form-control" name="district" id="district">
+        <option value="" disabled selected>Select District</option>
+        <option value="2">Ampara</option>
+        <option value="3">Anuradhapura</option>
+        <option value="4">Badulla</option>
+        <option value="5">Batticaloa</option>
+        <option value="1">Colombo</option>
+        <option value="6">Galle</option>
+        <option value="7">Gampaha</option>
+        <option value="8">Hambantota</option>
+        <option value="25">Jaffna</option>
+        <option value="10">Kaluthara</option>
+        <option value="11">Kandy</option>
+        <option value="12">Kegalle</option>
+        <option value="13">Kilinochchi</option>
+        <option value="14">Kurunagala</option>
+        <option value="15">Mannar</option>
+        <option value="16">Mathale</option>
+        <option value="17">Mathara</option>
+        <option value="18">Monaragala</option>
+        <option value="19">Mullaitivu</option>
+        <option value="20">Nuwara Eliya</option>
+        <option value="21">Polonnaruwa</option>
+        <option value="22">Puttalam</option>
+        <option value="23">Ratnapura</option>
+        <option value="24">Trincomalee</option>
+        <option value="9">Vavuniya</option>
         </select>
     </div>
   </div>
@@ -120,9 +104,9 @@
   <div class="form-group">
     <label for="dsDivision" class="control-label col-sm-4">Divisional Secretariat Division / ප්‍රාදේශීය ලේකම් කොට්ඨාශය </label>
     <div class="col-sm-3" style="margin-bottom: 5px">
-		<select class="form-control" name="dsDivision" id="dsDivision">
-			<option value="0" disabled selected>Select DS Division</option>
-        </select>
+      <select class="form-control" name="dsDivision" id="dsDivision">
+			  <option value="0" disabled selected>Select DS Division</option>
+      </select>
     </div>
   </div>
 
@@ -134,19 +118,21 @@
     </div>
 
   </div>
-  
+
   <div class="form-group">
     <label for="address" class="control-label col-sm-4">Permanent Address / ස්ථිර ලිපිනය / நிரந்தர முகவரி</label>
     <div class=" col-sm-4" style="margin-bottom: 5px">
       <input type="text" class="form-control" name="address1" id="address1" placeholder="Address line 1">
     </div>
   </div>
+
   <div class="form-group">
     <label for="address2" class="control-label col-sm-4"></label>
     <div class=" col-sm-4" style="margin-bottom: 5px">
       <input type="text" class="form-control" name="address2" id="address2" placeholder="Address line 2">
     </div>
   </div>
+
   <div class="form-group">
     <label for="address3" class="control-label col-sm-4"></label>
     <div class=" col-sm-4" style="margin-bottom: 5px">
@@ -170,7 +156,6 @@
       <input type="email" class="form-control" name="email" id="email">
     </div>
   </div>
-
 
   <div class="form-group">
     <label for="skype" class="control-label col-sm-4">Skype / ஸ்கைப்</label>
